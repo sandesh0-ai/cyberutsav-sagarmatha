@@ -1,0 +1,89 @@
+
+                    * {
+                        box-sizing: border-box;
+                    }
+                    
+                    body {
+                        font-family: Arial, sans-serif;
+                        background-color: #f4f4f4;
+                        margin: 0;
+                        padding: 0;
+                    }
+                    
+                    .container {
+                        max-width: 600px;
+                        margin: 50px auto;
+                        padding: 20px;
+                        background-color: #fff;
+                        border-radius: 9px;
+                        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                        text-align: center;
+                        animation: fadeIn 2s ease-in-out;
+                    }
+                    
+                    h1 {
+                        margin-bottom: 21px;
+                    }
+                    
+                    #timer {
+                        font-size: 18px;
+                        margin-bottom: 12px;
+                    }
+                    
+                    #progress-bar {
+                        background-color: #5c0712;
+                        border-radius: 5px;
+                        height: 20px;
+                        margin-bottom: 20px;
+                    }
+                    
+                    #progress {
+                        background-color: #f700ff;
+                        height: 100%;
+                        width: 0;
+                        border-radius: 5px;
+                    }
+                    
+                    .btn-container {
+                        display: flex;
+                        flex-direction: column;
+                        margin: 22px 0;
+                    }
+                    
+                    .btn {
+                        background-color: #8c00ff;
+                        color: #fff;
+                        padding: 10px;
+                        border: none;
+                        border-radius: 6px;
+                        cursor: pointer;
+                        margin: 4px 0;
+                        transition: background-color 0.5s, transform 0.2s;
+                        animation: slideIn 0.5s ease-in-out;
+                    }
+                    
+                    .btn:hover {
+                        background-color: #0056b3;
+                        transform: scale(1.1);
+                    }
+                    
+                    .hidden {
+                        display: none;
+                    }
+                    
+                    #question-container {
+                        font-size: 1.8em;
+                        margin-bottom: 20px;
+                        animation: fadeIn 1s ease-in-out;
+                    }
+                    
+                    @keyframes fadeIn {
+                        from { opacity: 0; }
+                        to { opacity: 1; }
+                    }
+                    
+                    @keyframes slideIn {
+                        from { transform: translateX(-100%); }
+                        to { transform: translateX(0); }
+                    }
+                    
